@@ -1,4 +1,5 @@
-# Bootstrap Starter Kit
+# The Flux
+Implements [BootstrapStarterKit](https://github.com/Medill/BootstrapStarterKit)
 ## See it
 [See it in action here](http://medill.github.io/BootstrapStarterKit/)
 
