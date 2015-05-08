@@ -1,0 +1,107 @@
+include includes/mixins
+mixin head("Introduction to HTML")
+
+		
+
+body(data-spy="scroll", data-target=".subnav", data-offset="-2")
+	mixin navbar("Learning HTML")
+
+	
+	div.main_feature
+		div.container
+			h1 HTML
+			p.lead
+				| Reference for presentations, exercises and handouts.
+			div.subnav
+				ul.nav.nav-pills
+					li
+						a(href="#how_web_works") How the Web Works
+					li
+						a(href="#intro") Introduction to HTML
+					li
+						a(href="#hands_on_101") Hands On 101
+	
+
+	// BEGIN CONTENT
+	div.container
+		// Introduction to HTML
+		section#how_web_works
+			div.page-header
+				h2 How the Web Works
+				p.lead
+					| 
+				p This is a paragraph
+				p 
+			iframe(src="http://www.slideshare.net/slideshow/embed_code/18861526", width="100%", height="600", frameborder="0", allowfullscreen, webkitallowfullscreen, mozallowfullscreen)
+
+
+		// Introduction to CSS
+		section#intro
+			div.page-header
+				h2 Introduction to HTML
+				p.lead
+					| HTML is structure, basic HTML
+
+			iframe(src="http://www.slideshare.net/slideshow/embed_code/18861871", width="100%", height="600", frameborder="0", allowfullscreen, webkitallowfullscreen, mozallowfullscreen)
+
+
+		// Introduction to CSS
+		section#hands_on_101
+			div.page-header
+				h2 Hands On 101
+
+			// ROW
+			div.row
+				div.span4
+					h3.featurette-heading
+						| Lesson 1
+					p.lead
+						span.muted
+							| Playing with Inspector
+				
+				div.span8
+				
+					div.thumbnail.pull-right.span4
+						img(src="img/inspect_element.png")
+						p Right-click on a webpage and click "Inspect Element."
+					p
+						| Open a website, like <a href="http://northwestern.edu" target="_blank">northwestern.edu</a> or <a href="http://nytimes.com" target="_blank"> The New York Times</a>, and inspect it by right-clicking a page of the page and click "Inspect Element." Try things like highlighting different elements; deleting elements; and moving elements around.
+			
+				
+			
+			hr
+
+			// ROW
+			div.row
+				div.span4
+					h3.featurette-heading
+						| Lesson 2
+					p.lead
+						span.muted
+							| Format an Article with HTML
+					p
+						| Create a folder called "onion", and paste the text below into a new HTML page in that folder.
+		
+				div.span8
+					iframe(style="width:100%;height:400px", src="http://jsfiddle.net/kJHdt/86/embedded/html,result/", allowfullscreen="allowfullscreen",frameborder="0")
+			
+			hr
+
+			// ROW
+			div.row
+				div.span4
+					h3.featurette-heading
+						| Lesson 3
+					p.lead
+						span.muted
+							| Troubleshooting HTML
+					p
+						| Paste the HTML code below into a new HTML page, and fix the errors.
+			
+				div.span8
+					iframe(style="width:100%;height:400px", src="http://jsfiddle.net/dVYtK/20/embedded/html,result/", allowfullscreen="allowfullscreen",frameborder="0")
+			
+			hr
+		hr
+
+		mixin footer

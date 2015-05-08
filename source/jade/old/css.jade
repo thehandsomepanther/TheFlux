@@ -1,0 +1,228 @@
+include includes/mixins
+mixin head("CSS")
+
+		
+
+body(data-spy="scroll", data-target=".subnav", data-offset="-2")
+	mixin navbar("CSS")
+
+	
+	div.main_feature
+		div.container
+			h1 CSS
+			p.lead
+				| Reference for presentations, exercises and handouts.
+			div.subnav
+				ul.nav.nav-pills
+					li
+						a(href="#intro") Introduction to CSS
+					li
+						a(href="#page_design") CSS Page Design
+					li
+						a(href="#grid") Grid System, Bootstrap
+					li
+						a(href="#hands_on") Hands On
+					
+
+	
+	div.container
+		// Introduction to CSS
+		section#intro
+			div.page-header
+				h2 Introduction to CSS
+				p.lead
+					| Styling structure
+			iframe(src="http://www.slideshare.net/slideshow/embed_code/18926912", width="100%", height="600", frameborder="0", allowfullscreen, webkitallowfullscreen, mozallowfullscreen)
+		
+		// CSS Page Design
+		section#page_design
+			div.page-header
+				h2 CSS Page Design
+				p.lead
+					| divs, floats, oh my
+			iframe(src="http://www.slideshare.net/slideshow/embed_code/18931534", width="100%", height="600", frameborder="0", allowfullscreen, webkitallowfullscreen, mozallowfullscreen)
+
+		// CSS Bootstrap
+		section#grid
+			div.page-header
+				h2 Grid System, Bootstrap
+				p.lead
+					| Bringing order to the chaos
+				p 
+					a(href="http://twitter.github.io/bootstrap/index.html", target="_blank") Twitter Bootstrap
+
+		// Hands On CSS
+		section#hands_on
+			div.page-header
+				h2 Hands On
+
+			// LESSON 1
+			div.row
+				div.span3
+					h3.featurette-heading
+						| Lesson 1: Basic CSS
+					p.lead
+						span.muted
+							| Using the Element Selector
+				
+				div.span9
+					div.row
+						div.span5
+							h4 Setup the files
+							ol
+								li 
+									| Create a folder called <span class="badge badge-inverse"><i class="icon-folder-open icon-white"></i>OnionStyle</span>.
+								li
+									| Create a <span class="badge badge-inverse"><i class="icon-file icon-white"></i>index.html</span> file in that folder and copy the html in the example into it.
+								li
+									| In that folder, create a <span class="badge badge-inverse"><i class="icon-folder-open icon-white"></i>css</span> folder and a <span class="badge badge-inverse"><i class="icon-file icon-white"></i>styles.css</span> file inside of it. Copy the CSS from the css tab in the example into it.
+								li
+									| Lastly, link that CSS file from the HTML file: <code>&lt;link rel="stylesheet" href="css/styles.css" /&gt;</code>
+
+							
+							p You should end up with the following structure
+							ul
+								li
+									| <i class="icon-folder-open"></i>OnionStyle</span>
+									ul
+										li 
+											| <i class="icon-file"></i>index.html</span>
+										li 
+											| <i class="icon-folder-open"></i>css</span>
+											ul
+												li
+													| <i class="icon-file"></i>styles.css</span>
+						div.span4
+							h4 Style the article
+							ul
+								li Make the main headline dark green.
+								li Use the font family "Georgia" for the main headline and the subheadline.
+								li Center the text of the main headline and the subheadline.
+								li Make the paragraphs have a font-size of 16 pixels and a line height of 26 pixels.
+								li Remove the underline from the links.
+								li Make the "You might also like" label all uppercase.
+								li Bonus: Make an underline appear only when you hover over a link.
+					div.row
+						div.span9
+							iframe(style="width:100%;height:400px", src="http://jsfiddle.net/zachwise/7DtPf/3/embedded/html,css,result/", allowfullscreen="allowfullscreen",frameborder="0")
+					
+			hr
+
+			// LESSON 2
+			div.row
+				div.span3
+					h3.featurette-heading
+						| Lesson 2: Styling with Classes
+					p.lead
+						span.muted
+							| Style it like Twitter using the element selector, and classes	
+					a(href="http://jsfiddle.net/zachwise/MZtxc/embedded/result/", target="_blank")
+						img(src="img/css_tweet.png")
+				div.span9
+					div.row
+						div.span5
+							h4 Setup the files
+							ol
+								li 
+									| Create a folder called <span class="badge badge-inverse"><i class="icon-folder-open icon-white"></i>TweetStyle</span>.
+								li
+									| Create a <span class="badge badge-inverse"><i class="icon-file icon-white"></i>index.html</span> file in that folder and copy the html in the example into it.
+								li
+									| In that folder, create a <span class="badge badge-inverse"><i class="icon-folder-open icon-white"></i>css</span> folder and a <span class="badge badge-inverse"><i class="icon-file icon-white"></i>styles.css</span> file inside of it. Copy the CSS from the css tab in the example into it.
+								li
+									| Lastly, link that CSS file from the HTML file: <code>&lt;link rel="stylesheet" href="css/styles.css" /&gt;</code>
+
+							
+							p You should end up with the following structure
+							ul
+								li
+									| <i class="icon-folder-open"></i>TweetStyle</span>
+									ul
+										li 
+											| <i class="icon-file"></i>index.html</span>
+										li 
+											| <i class="icon-folder-open"></i>css</span>
+											ul
+												li
+													| <i class="icon-file"></i>styles.css</span>
+						div.span4
+							h4 Style It
+							p Make it look like the image to the left by creating class definitions in your css file.
+							p Here are some of the CSS rules you'll need to write:
+							ul
+								li Write a CSS rule for the "fullname" class that makes the color "#333333" and a font-size of 18px.
+								li Make the "username" class gray and not bold
+								li Make the "tweet-text" class a font size of 18 pixels
+								li Make all the links have the color "#008AB9"
+								li Make all of the text Arial or another sans-serif font
+								li Make the "tweet-text" text a serif font.
+							
+					div.row
+						div.span9
+							iframe(style="width:100%;height:400px", src="http://jsfiddle.net/zachwise/MZtxc/1/embedded/html,css,result/", allowfullscreen="allowfullscreen",frameborder="0")
+
+			hr
+
+			// LESSON 3
+			div.row
+				div.span3
+					h3.featurette-heading
+						| Lesson 3: Working with the Box and Floats
+					p.lead
+						span.muted
+							| Style it like Twitter using the element selector, and classes	
+					a(href="http://jsfiddle.net/zachwise/zq5BX/2/embedded/result/", target="_blank")
+						img(src="img/css_float_tweets.png")
+					
+				div.span9
+					div.row
+						div.span5
+							h4 Setup the files
+							ol
+								li 
+									| Create a folder called <span class="badge badge-inverse"><i class="icon-folder-open icon-white"></i>TweetStyleFloat</span>.
+								li
+									| Create a <span class="badge badge-inverse"><i class="icon-file icon-white"></i>index.html</span> file in that folder and copy the html in the example into it.
+								li
+									| In that folder, create a <span class="badge badge-inverse"><i class="icon-folder-open icon-white"></i>css</span> folder and a <span class="badge badge-inverse"><i class="icon-file icon-white"></i>styles.css</span> file inside of it. Copy the CSS from the css tab in the example into it.
+								li
+									| Lastly, link that CSS file from the HTML file: <code>&lt;link rel="stylesheet" href="css/styles.css" /&gt;</code>
+
+							
+							p You should end up with the following structure
+							ul
+								li
+									| <i class="icon-folder-open"></i>TweetStyleFloat</span>
+									ul
+										li 
+											| <i class="icon-file"></i>index.html</span>
+										li 
+											| <i class="icon-folder-open"></i>css</span>
+											ul
+												li
+													| <i class="icon-file"></i>styles.css</span>
+						div.span4
+							h4 Style It
+							p Make it look like the image to the left by creating and modifying class definitions in your css file.
+							p Here are some of the things you'll need to do:
+							ul
+								li Make the page background light gray(#CCCCCC)
+								li Make the tweet background white (#FFFFFF)
+								li Add a 5px border radius to each tweet.
+								li Add 20 pixels of padding around each tweet
+								li Add a rule that makes an underline appear when you mouseover links
+								li Make each tweet 400 pixels wide
+								li Float the tweets so that you have two tweets in each row
+								li Make each tweet have 20 pixels of space between each one.
+							
+							
+					div.row
+						div.span9
+							iframe(style="width:100%;height:400px", src="http://jsfiddle.net/zachwise/Bjmp4/1/embedded/html,css,result/", allowfullscreen="allowfullscreen",frameborder="0")
+
+
+		
+		
+
+	div.container	
+		mixin footer

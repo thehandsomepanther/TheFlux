@@ -1,0 +1,120 @@
+include includes/mixins
+mixin head("Storytelling Interactive Tools")
+
+		
+
+body(data-spy="scroll", data-target=".subnav", data-offset="-2")
+	mixin navbar("Interactive")
+
+	// BEGIN CONTENT
+	div.main_feature
+		div.container
+			h1 Interactive
+			p.lead
+				| <em>More coming soon...</em>
+			div.subnav
+				ul.nav.nav-pills
+					li
+						a(href="#storytelling") Interactive Storytelling
+					li
+						a(href="#embeddable") Embeddable Tools
+					
+	// BEGIN CONTENT
+	div.container
+		// Interactive Storytelling
+		section#storytelling
+			div.page-header
+				h2 Interactive Storytelling
+				p.lead
+					| Overview of Skills
+			div.row
+				div.span12
+					img(src="img/venn-interactive.png")
+		// Introduction to HTML
+		section#embeddable
+			div.page-header
+				h2 Embeddable Tools
+				p.lead
+					| Ready to use, embeddable and free.
+			// ROW
+			div.row-fluid#timelinejs
+				div.span4.offset1
+					a(href="http://timeline.verite.co/",target="_blank")
+						img.img-polaroid(src="img/thumbs/timelinejs.png")
+				div.span6
+					h2.featurette-heading
+						a(href="http://timeline.verite.co/",target="_blank") TimelineJS
+					p.lead
+						span.muted
+							| Beautifully crafted timelines that are easy, and intuitive to use.
+					p
+						| TimelineJS can pull in media from different sources. It has built in support for: Twitter, Flickr, Google Maps, YouTube, Vimeo, Dailymotion, Wikipedia, SoundCloud and more media types in the future. Creating one is as easy as filling in a Google spreadsheet or as detailed as JSON.
+			
+			hr
+
+			// ROW
+			div.row-fluid#storify
+				div.span4.offset1
+					a(href="http://www.storify.com/",target="_blank")
+						img.img-polaroid(src="img/thumbs/storify.png")
+				div.span6
+					h2.featurette-heading
+						a(href="http://www.storify.com/",target="_blank") Storify
+					p.lead
+						span.muted
+							| Storify helps make sense of what people post on social media. Users curate the most important voices and turn them into stories.
+			
+			
+			hr
+		
+			// ROW
+			div.row-fluid#googlecharts
+				div.span4.offset1
+					a(href="http://imagecharteditor.appspot.com",target="_blank")
+						img.img-polaroid(src="img/thumbs/googlecharts.png")
+				div.span6
+					h2.featurette-heading
+						a(href="http://imagecharteditor.appspot.com",target="_blank") Google Charts
+					p.lead
+						span.muted
+							| Choose from a variety of charts. From simple scatter plots to hierarchical treemaps, find the best fit for your data.
+			hr
+
+			// ROW
+			div.row-fluid#googlemaps
+				div.span4.offset1
+					a(href="http://maps.google.com/",target="_blank")
+						img.img-polaroid(src="img/thumbs/googlemaps.png")
+				div.span6
+					h2.featurette-heading
+						a(href="http://maps.google.com/",target="_blank") Google Maps
+					p.lead
+						span.muted
+							| Google Maps gives you the ability to create and share personalized, annotated maps of your world.
+			
+			
+			hr
+
+			// ROW
+			div.row-fluid#popcorn
+				div.span4.offset1
+					a(href="https://popcorn.webmaker.org/",target="_blank")
+						img.img-polaroid(src="img/thumbs/popcornmaker.png")
+				div.span6
+					h2.featurette-heading
+						a(href="https://popcorn.webmaker.org/",target="_blank") Mozilla Popcorn Maker
+					p.lead
+						span.muted
+							| Video beyond the box.
+					p
+						| Popcorn Maker makes it easy to enhance, remix and share web video. Use your web browser to combine video and audio with content from the rest of the web — from text, links and maps to pictures and live feeds.
+			hr
+
+			
+	// BEGIN CONTENT
+	div.container
+
+		
+		
+		mixin footer
+	
