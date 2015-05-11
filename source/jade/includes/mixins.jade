@@ -1,3 +1,23 @@
+mixin meta(title, description, image, twittersite, twitterauthor, url)
+	// Meta
+	meta(name="description", content="#{description}")
+	meta(name="author", content="Northwestern University Medill School of Journalism")
+	
+	// Twitter Card https://dev.twitter.com/cards/types/summary
+	meta(name="twitter:card", content="summary")
+	meta(name="twitter:site", content="#{twittersite}")
+	meta(name="twitter:creator", content="#{twitterauthor}")
+	meta(name="twitter:title", content="#{title}")
+	meta(name="twitter:description", content="#{description}")
+	meta(name="twitter:image", content="#{image}")
+
+	// Facebook Open Graph https://developers.facebook.com/docs/sharing/webmasters#markup
+	meta(property="og:url", content="#{url}")
+	meta(property="og:type", content="article")
+	meta(property="og:title", content="#{title}")
+	meta(property="og:description", content="#{description}")
+	meta(property="og:image", content="#{image}")
+
 mixin head(title)
 	include ascii
 

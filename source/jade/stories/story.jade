@@ -4,16 +4,16 @@ html(lang="en")
 		meta(charset='utf-8')
 		meta(http-equiv="X-UA-Compatible", content="IE=edge")
 		meta(name='viewport', content='width=device-width, initial-scale=1.0')
-		meta(name='description', content='')
-		meta(name='author', content='')
-		meta(name='keywords', content='Template, Bootstrap')
+		meta(name='keywords', content='Transition, Journalism, Northwestern, Medill')
 		meta(name='apple-mobile-web-app-capable', content='yes')
 		meta(name='apple-touch-fullscreen', content='yes')
 
-		title Story
+		+meta("The Flux", "Stories On Transition", "http://graphics8.nytimes.com/images/2012/02/19/us/19whitney-span/19whitney-span-articleLarge.jpg", "@MedillSchool", "@zlwise", "the-flux.com")
+		
+		title The Flux - Story
 
 		// CSS
-		link(rel='stylesheet', href='../../css/project.css?v10')
+		link(rel='stylesheet', href='../../css/theflux.css?v10')
 		link(rel='stylesheet', href='css/story.css')
 		// HTML5 shim, for IE6-8 support of HTML elements
 		//if lt IE 9
@@ -28,34 +28,7 @@ html(lang="en")
 	body(data-spy='scroll',data-target='.subnav',data-offset='80')
 		
 		// NAVBAR
-		nav#navbar.navbar.navbar-default.navbar-fixed-top(role="navigation")
-			div.container-fluid
-				div.navbar-header
-				
-					button.navbar-toggle(type="button", data-toggle="collapse", data-target="#main-navbar")
-						span.sr-only Toggle navigation
-						span.icon-bar
-						span.icon-bar
-						span.icon-bar
-					a.navbar-brand(href="")
-						img.img-responsive(alt="logo", src="../../img/logo_small.png")
-				// Navbar Links etc
-				div.navbar-collapse.collapse#main-navbar
-
-					ul.nav.navbar-nav.navbar-right
-						// HOME
-						li.active
-							a(href="index.html") Home
-						li
-							a(href="interactive.html") Story 1
-						li
-							a(href="interactive.html") Story 2
-						li
-							a(href="interactive.html") Story 3
-						li
-							a(href="interactive.html") Story 4
-						li
-							a(href="interactive.html") Story 5
+		include ../includes/navbar
 
 		// STORY COVER
 		section#story-cover.story-cover
@@ -163,5 +136,5 @@ html(lang="en")
 
 		// JavaScript
 		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js')
-		script(type='text/javascript', src='../../js/project.js?v10')
+		script(type='text/javascript', src='../../js/theflux.js?v10')
 		script(type='text/javascript', src='js/story.js')

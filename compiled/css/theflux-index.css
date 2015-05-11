@@ -1,0 +1,9 @@
+/*!
+	The Flux Index page
+*/
+.subnav {
+  font-size: 19px;
+}
+div.navbar.navbar-fixed-top.subnav {
+  top: 61px !important;
+}
