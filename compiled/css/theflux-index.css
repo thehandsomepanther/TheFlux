@@ -66,16 +66,17 @@ html {
   height: 300px;
   border-bottom: 2px solid #CCC;
   border-left: 2px solid #CCC;
+  overflow: hidden;
 }
 .story-panel a .story-item {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   display: table;
+  overflow: hidden;
 }
 .story-panel a .story-item .story-item-container {
   padding: 20px;
-  width: 50%;
 }
 .story-panel a .story-item .story-item-container h2 {
   margin-top: 0;
@@ -89,8 +90,8 @@ html {
   color: #FFF;
   font-weight: 300;
   display: none;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 18px;
+  line-height: 20px;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .story-panel a:hover {
