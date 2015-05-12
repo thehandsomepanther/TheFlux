@@ -54,6 +54,16 @@ or even easier, I've added some javascript to do magic on basic figure images to
 	<div class="caption">Senior Jacqueline Martinez and her boyfriend share a bus ride on her second to last day of high school. The two are expecting their first child this November.</div>
 </section>
 ```
+###Video Embeds
+Use the following example as a way to create responsive embeds
+```html
+<figure>
+	<div class="embed-responsive embed-responsive-16by9">
+		<iframe src="https://player.vimeo.com/video/19974325?color=b11623" width="100%" frameborder="0" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen" class="embed-responsive-item"></iframe>
+	</div>
+	<figcaption>Reporter Corey Kilgannon, Marcus Yam and myself chased calls over a police scanner for around 16hrs straight. What we found wasn’t what we expected.</figcaption>
+</figure>
+```
 ###Blockquotes
 ```html
 <blockquote>
