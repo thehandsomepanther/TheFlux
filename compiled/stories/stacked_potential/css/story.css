@@ -4,3 +4,29 @@
 	font-size: 6.5em;
 	text-transform: uppercase;
 }
+
+/* Drop Cap */
+.first-letter{
+	font-family: "Ranga", sans-serif;
+	font-size: 5.25em;
+	line-height: 1em;
+	color: #FFF;
+	background-color: #50c083;
+	float: left;
+	padding: 10px 13px 2px 0px;
+	margin-right: 0.05em;
+}
+
+/* Use PT Serif in place of default font. */
+article p{
+	font-family: "PT Serif", serif;
+	font-size: 1.25em;
+	color:#4b4b4b;
+}
+
+/* Subheads */
+article h3{
+	color: #50c083;
+	margin-top: 2em;
+
+}
