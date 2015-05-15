@@ -5,16 +5,30 @@
 	text-transform: uppercase;
 }
 
+.story-cover {
+    background-image: url('../img/stacked%20potential.svg');
+    background-repeat: no-repeat;
+    background-color: #e83f3f;   
+    background-size: 90%;
+    background-position: center;
+}
+
 /* Drop Cap */
 .first-letter{
 	font-family: "Ranga", sans-serif;
 	font-size: 5.25em;
 	line-height: 1em;
-	color: #FFF;
-	background-color: #50c083;
+	color: #333;
+	background-color: #fff72a;
 	float: left;
 	padding: 10px 13px 2px 0px;
 	margin-right: 0.05em;
+    width: 1.1em;
+    text-align: center;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #333;
+    box-shadow: -10px 10px 0 #333;
 }
 
 /* Use PT Serif in place of default font. */
@@ -22,11 +36,11 @@ article p{
 	font-family: "PT Serif", serif;
 	font-size: 1.25em;
 	color:#4b4b4b;
+    display: block;
 }
 
 /* Subheads */
 article h3{
 	color: #50c083;
 	margin-top: 2em;
-
 }
