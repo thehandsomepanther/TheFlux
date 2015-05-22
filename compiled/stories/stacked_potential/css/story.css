@@ -48,7 +48,7 @@ div.story-deck p{
 	color: #333;
 	background-color: #fff72a;
 	float: left;
-	padding: 10px 13px 2px 0px;
+	padding: 10px 13px 2px 10px;
 	margin-right: 0.05em;
     /*width: 1.1em;*/
     text-align: center;
@@ -112,3 +112,13 @@ blockquote{
 	 
  }
  
+.subhead {
+    font-family: 'Roboto Condensed', Arial, sans-serif;   
+    font-weight: 700;
+    font-size: 5em;
+    color: yellow;
+    -webkit-text-stroke: 3px black;
+    text-shadow: 5px 5px #000;
+    line-height: 100px;
+    margin-top: 70px;
+}
