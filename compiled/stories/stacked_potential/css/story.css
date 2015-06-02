@@ -144,6 +144,17 @@ blockquote {
 }
 
 .picture-quote {
+    position: relative;
+    top: 300px;
+    margin-top: -400px;
+}
+
+img {
+    position: relative;   
+}
+
+figure {
+    position: relative;   
 }
 
 blockquote p {}
