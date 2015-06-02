@@ -12,7 +12,7 @@
 }
 
 .headline {
-    font-size: 550%;
+    font-size: 6em;
     line-height: 1em;
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
@@ -32,7 +32,6 @@
 
 .story-cover .story-cover-content .byline {
     color: #000;
-    line-height: 30px;
     display: inline;
     background-color: #e2ff42;
     box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
@@ -54,6 +53,12 @@
     padding-top: 5px;
     padding-bottom: 5px;
     box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
+    text-shadow: none;
+}
+
+.byline {
+    text-shadow: none;   
+    line-height: 1.4em;
 }
 
 .lead-container {
@@ -149,6 +154,14 @@ blockquote {
     margin-top: -400px;
 }
 
+.after-image {
+    position: relative;
+    top: -200px;
+    z-index: 3;
+    background-color: #fff;
+    padding-top: 10px;
+}
+
 img {
     position: relative;   
 }
@@ -180,7 +193,7 @@ blockquote cite {}
     font-family: 'Roboto Condensed', Arial, sans-serif;
     font-size: 7em;
     color: #000;
-    line-height: 150px;
+    line-height: 1.16em;
     margin-top: 70px;
     box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
     display: inline;
@@ -220,4 +233,34 @@ blockquote cite {}
 .accordion-inner {
     padding: 7px 7px 7px 7px;
     color: white;
+}
+
+@media (max-width: 600px) {
+    .headline {
+        font-size: 4em;
+    }    
+    
+    .byline {
+        line-height: 1.6em;   
+    }
+    
+    .after-image {
+        top: 0;   
+    }
+    
+    blockquote {
+        font-size: 1.5em;
+    }
+    
+    .picture-quote {
+        margin-top: 0;   
+    }
+    
+    .subhead {
+        font-size: 4.5em; 
+    }
+    
+    .drop-cap-container {
+        right: -40px;   
+    }
 }
