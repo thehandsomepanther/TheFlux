@@ -65,10 +65,6 @@
     margin-top: -10px;
 }
 
-figure {
-    z-index: 1;
-}
-
 div.story-deck {}
 
 .drop-cap-container {
@@ -129,8 +125,40 @@ img {
     position: relative;
 }
 
+.figure-container {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 500px;
+    background-size: cover;
+}
+
+.noo-what {
+    background-image: url('../img/_MG_5258.jpg');
+}
+
+.the-search {
+    background-image: url('../img/_MG_5293.jpg');   
+}
+
+.regulation {
+    background-image: url('../img/_MG_5250.jpg');  
+}
+
+.cure-all {
+    background-image: url('../img/_MG_5238.jpg');   
+}
+
+.uncertain-future {
+    background-image: url('../img/_MG_5252.jpg');  
+}
+
 figure {
-    position: relative;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+figcaption {
+    margin-left: 10px;
 }
 
 blockquote span {
@@ -154,15 +182,14 @@ blockquote cite {}
     font-family: 'Roboto Condensed', "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 7em;
     color: #000;
-    line-height: 1.16em;
+    line-height: 1.5em;
     margin-top: 70px;
-    /*
-    box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
-    background-color: #e2ff42;
-*/
-    
     display: inline;
     border-bottom: 20px solid #e2ff42;
+    position: relative;
+    top: -100px;
+    background-color: #fff;
+    box-shadow: 10px 0 0 #fff, -10px 0 0 #fff;
 }
 
 .accordion-toggle:hover {
@@ -193,6 +220,12 @@ blockquote cite {}
 .accordion-inner {
     padding: 7px 7px 7px 7px;
     color: white;
+}
+
+@media (max-width: 992px) {
+    .subhead {
+        top: 0px;
+    }
 }
 
 @media (max-width: 600px) {
