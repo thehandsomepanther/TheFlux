@@ -54,11 +54,6 @@
     margin-bottom: 3px;
 }
 
-.lead {
-    line-height: 1.5em;
-    margin-left: 10px;
-}
-
 .story-cover .story-cover-content p.lead {
     margin-top: 40px;
     color: #000;
@@ -68,6 +63,9 @@
     padding-bottom: 5px;
     box-shadow: 10px 0 0 #e2ff42, -10px 0 0 #e2ff42;
     text-shadow: none;
+    font-size: 1.5em;
+    line-height: 1.45em;
+    margin-left: 10px;
 }
 
 .lead-container {
@@ -96,6 +94,10 @@ div.story-deck {}
     font-family: "Roboto Condensed", sans-serif;
     color: #000;
     margin-bottom: 10px;
+}
+
+.italic {
+    font-style: italic;   
 }
 
 article h3 {
